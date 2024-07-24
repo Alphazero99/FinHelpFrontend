@@ -89,7 +89,7 @@ const Calculator = () => {
       const savedStockName = localStorage.getItem("savedStockName");
       const investmentPeriod = localStorage.getItem("investmentPeriod");
       const response = await axios.get(
-        `https://finhelpbackend-production.up.railway.app/api/v1/user/stock/${savedStockName}/${investmentPeriod}`
+        `https://finhelpbackend.onrender.com/api/v1/user/stock/${savedStockName}/${investmentPeriod}`
       );
       const { stockName, livePrice, startPrice, dayHigh, dayLow } =
         response.data;
